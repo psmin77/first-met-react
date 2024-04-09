@@ -4,13 +4,14 @@ import CommentList from "./chapter_05/CommentList";
 import "./index.css";
 import reportWebVitals from "./reportWebVitals";
 import NotificationList from "./chapter_06/NotificationList";
+import Accommodate from "./chapter_07/Accommodate";
 
 const root = createRoot(document.getElementById("root"));
 
 root.render(
-  // <React.StrictMode>
-  <NotificationList />
-  // </React.StrictMode>
+  <React.StrictMode>
+    <Accommodate />
+  </React.StrictMode>
 );
 
 // If you want to start measuring performance in your app, pass a function
