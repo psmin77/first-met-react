@@ -2,7 +2,7 @@ import styled from "styled-components";
 import data from "../../data.json";
 import Button from "../ui/Button";
 import { useState } from "react";
-import CommentList from "../../list/CommentList";
+import CommentList from "../list/CommentList";
 import TextInput from "../ui/TextInput";
 import { useNavigate, useParams } from "react-router-dom";
 
@@ -50,7 +50,7 @@ function PostViewPage(props) {
   const navigate = useNavigate();
   const { postId } = useParams();
 
-  const post = data.find((item) => item.id === postId);
+  const post = data.find((item) => item.id === parseInt(postId));
 
   const [comment, setComment] = useState("");
 
